@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sistema de multas</title>
+</head>
+<body>
+    <h1>sistema de multas</h1>
+    <p>que velocidade voce chegou</p> <input type="number" name="velocidade" id="velo">
+    <input type="button" value="verificar" onclick=verificar()>
+    <div id="res">resultado</div>
+    <script>
+        function verificar() {
+            var vel = document.querySelector('input#velo')
+            veln = Number(vel.value)
+            if(veln > 60) {
+                res.innerHTML = `a sua  velocidade foi de ${veln} e alcançou o limite <strong>Multado<strong/>`
+            } else { (veln < 60) 
+                res.innerHTML = `voce esta tranquilo nao passou o limite `
+            }
+        }
+    </script>
+    
+</body>
+</html>
