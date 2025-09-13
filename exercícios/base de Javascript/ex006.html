@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aprendendo mais</title>
+    <style>
+        body {
+            background-color: lightgrey;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #area {
+            background-color: lightskyblue;
+            text-align: center;
+            margin: auto;
+            padding-top: 100px;
+            width: 200px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>  
+    <div id="area">interaja aqui
+    </div>
+
+    <script>
+        var total = window.document.getElementById('area')
+        total.addEventListener('click', clicou)
+        total.addEventListener('mouseenter', entrei)
+         total.addEventListener('mouseleave', sai)
+        function clicou() {
+        var q = window.document.getElementById('area')
+        q.innerText = 'clicou seu otario'
+         }
+        function entrei() {
+            var e = window.document.getElementById('area')
+            e.style.background = 'red'
+        } 
+        function sai() {
+            var s = window.document.querySelector('div#area')
+            s.style.background = 'lightskyblue'
+        }
+    </script>
+    
+</body>
+</html>

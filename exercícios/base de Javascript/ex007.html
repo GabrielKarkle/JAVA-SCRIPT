@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>somando numeros</title>
+</head>
+<body>
+    <h1>calculadora apenas de numeros</h1>
+    <input type="number" name="nm1" id="nm1"> +
+    <input type="number" name="nm2" id="nm2">
+    <input type="button" value="somar" onclick="somar()">
+    <div id="res">resultado</div>
+    <script>
+        function somar() {
+            var v1 = document.getElementById('nm1')
+            var v2 = document.getElementById('nm2')
+            var cv1 = Number(v1.value)
+            var cv2 = Number(v2.value)
+            var s = cv1 + cv2 
+            var res = document.querySelector('div#res')
+            res.innerText = `o resultado da soma entre ${cv1} e ${cv2} e de ${s}`
+        }
+        
+    </script>
+
+</body>
+</html>

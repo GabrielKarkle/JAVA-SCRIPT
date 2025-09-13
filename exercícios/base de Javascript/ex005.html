@@ -6,16 +6,25 @@
     <title>testando selecionadores</title>
     <style>
         body {
-            background-color: lightgreen;
+            background-color: rgb(144, 211, 238);
             font-family: Arial, Helvetica, sans-serif;
-            
+
         }
     </style>
 </head>
 <body>
-    <h1>conhecendo a base de Javascript</h1>
-    <p>ola, mundo!</p>
+    <h1 class="t1">conhecendo a base de Javascript</h1>
+    <h2 class="tt2">boa tarde grupo</h2>
+    <p id="pp1" >ola, mundo!</p>
     <p>bom dia</p>
+    <script>
+        var titulo = window.document.getElementsByTagName('h1')[0]
+        titulo.style.background = 'white'
+        var p1 = window.document.getElementById('pp1')
+        p1.style.color = 'white'
+        var p2 = window.document.querySelector('h2.tt2')
+        p2.style.background = 'red'
+    </script>
     
 </body>
 </html>
