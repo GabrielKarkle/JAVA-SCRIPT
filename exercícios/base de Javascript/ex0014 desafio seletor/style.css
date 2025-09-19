@@ -6,14 +6,16 @@ body {
     color: white;
     
 }
-header {
+header, footer {
+    text-align: center;
 
 }
 main {
     background: white;
     color: black;
-    margin: auto;
-    padding: 10px;
+    padding: 5px;
+    margin: auto; 
+    width: 60%;
     border-radius: 10px;
     box-shadow: 3px 3px 5px #0000005f;
 }
