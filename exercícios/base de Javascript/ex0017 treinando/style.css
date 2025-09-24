@@ -1,0 +1,28 @@
+@charset "utf-8" ;
+
+body {
+    background-color: lightblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header, footer {
+    text-align: center;
+}
+
+main {
+    background-color: lightgrey;
+    height: auto ;
+    width: 350px;
+    padding: 10px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.488);
+}
+input#n1, input#n2, input#p3 {
+    margin: 10px;
+}
+
+footer p { 
+    font: italic;
+}
+
